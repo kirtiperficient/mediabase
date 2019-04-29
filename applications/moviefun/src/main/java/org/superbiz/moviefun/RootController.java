@@ -4,14 +4,16 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.superbiz.moviefun.movies.Movie;
 import org.superbiz.moviefun.movies.MoviesBean;
-import org.superbiz.moviefun.podcasts.Podcast;
-import org.superbiz.moviefun.podcasts.PodcastRepository;
+import org.superbiz.moviefun.podcast.Podcast;
+import org.superbiz.moviefun.podcast.PodcastRepository;
 
 import java.util.Map;
 
 @Controller
 public class RootController {
     private MoviesBean moviesBean;
+//    private Movie movie;
+//    private Podcast prodcast;
     private PodcastRepository podcastRepository;
 
     public RootController(MoviesBean moviesBean, PodcastRepository podcastRepository) {

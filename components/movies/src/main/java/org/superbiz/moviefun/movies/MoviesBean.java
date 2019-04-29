@@ -16,6 +16,7 @@
  */
 package org.superbiz.moviefun.movies;
 
+
 import org.springframework.stereotype.Repository;
 import org.springframework.transaction.annotation.Transactional;
 
@@ -25,6 +26,8 @@ import javax.persistence.TypedQuery;
 import javax.persistence.criteria.*;
 import javax.persistence.metamodel.EntityType;
 import java.util.List;
+
+
 
 @Repository
 public class MoviesBean {
