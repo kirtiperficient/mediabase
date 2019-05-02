@@ -3,7 +3,7 @@ applications:
   - name: movies-ms
     path: applications/movies-ms/build/libs/movies-ms-1.0-SNAPSHOT.jar
     routes:
-      - route: <initials>-movies-ms.apps.pcf.paltraining.perficient.com
+      - route:KM-movies-ms.apps.pcf.paltraining.perficient.com
     services:
       - movies-ms-database
   - name: podcasts-ms
@@ -15,7 +15,7 @@ applications:
   - name: moviefun
     path: applications/moviefun/build/libs/moviefun-1.0-SNAPSHOT.war
     routes:
-      - route: <initials>-moviefun.apps.pcf.paltraining.perficient.com
+      - route: KM-moviefun.apps.pcf.paltraining.perficient.com
     env:
-      MOVIES_MS_URL: http://<initials>-movies-ms.apps.pcf.paltraining.perficient.com/movies
-      PODCASTS_MS_URL: http://<initials>-podcasts-ms.apps.pcf.paltraining.perficient.com/podcasts
+      MOVIES_MS_URL: http://KM-movies-ms.apps.pcf.paltraining.perficient.com/movies
+      PODCASTS_MS_URL: http://KM-podcasts-ms.apps.pcf.paltraining.perficient.com/podcasts
