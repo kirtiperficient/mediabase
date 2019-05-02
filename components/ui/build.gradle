@@ -1,0 +1,7 @@
+apply from: "../../common.gradle"
+
+dependencies {
+//    compile project (":components:podcasts")
+    compile("org.springframework.boot:spring-boot-starter-web:$springBootVersion")
+    compile('commons-lang:commons-lang:2.4')
+}
