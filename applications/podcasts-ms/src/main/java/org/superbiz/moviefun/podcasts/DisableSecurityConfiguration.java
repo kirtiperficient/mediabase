@@ -1,4 +1,4 @@
-package org.superbiz.moviefun.podcast;
+package org.superbiz.moviefun.podcasts;
 
 import org.springframework.context.annotation.Configuration;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;

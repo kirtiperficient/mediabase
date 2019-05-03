@@ -1,11 +1,13 @@
-package org.superbiz.moviefun.podcastui;
+package org.superbiz.moviefun.podcasts;
 
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import java.io.Serializable;
 
-
-
-
-
-public class PodcastUI  {
+@Entity
+public class Podcast implements Serializable {
 
     private static final long serialVersionUID = 1L;
 
@@ -13,12 +15,14 @@ public class PodcastUI  {
     private String description;
     private String url;
 
+    @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
 
-    public PodcastUI() {
+    public Podcast() {
     }
 
-    public PodcastUI(String title, String description, String url) {
+    public Podcast(String title, String description, String url) {
         this.title = title;
         this.description = description;
         this.url = url;
